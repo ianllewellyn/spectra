@@ -1,0 +1,30 @@
+{
+  "name": "spectra",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/spectra.js",
+  "scripts": {
+    "start": "coffee -cw -o lib/ src/",
+    "build": "coffee -c -o lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ianllewellyn/spectra.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "rgb",
+    "light",
+    "frequency"
+  ],
+  "author": "ianllewellyn <ian@designsideways.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianllewellyn/spectra/issues"
+  },
+  "homepage": "https://github.com/ianllewellyn/spectra",
+  "dependencies": {
+    "coffee-script": "~1.6.3"
+  }
+}
