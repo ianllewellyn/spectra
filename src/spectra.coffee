@@ -7,7 +7,7 @@ do ->
 	INTENSITY_MAX = -> 255
 	
 	# Convert wavelength to RGB
-	exports.wavelengthToRGB = (wavelength) ->
+	wavelengthToRGB = (wavelength) ->
 		
 		red = undefined
 		green = undefined
@@ -61,3 +61,17 @@ do ->
 			factor = 0
 		
 		{r: adjust(red, factor), g: adjust(green, factor), b: adjust(blue, factor)}
+	
+	#--------------------------------------------------
+	
+	# Export as a module for use in node
+	module?.exports.wavelengthToRGB = wavelengthToRGB
+	
+	# Attach to the window for global use in the browser
+	window?.spectra =
+		wavelengthToRGB: wavelengthToRGB
+	
+	# Define 'spectra' for commonjs
+	if require && require.register
+		require.register 'spectra', (exports, require, module) ->
+			exports.wavelengthToRGB = wavelengthToRGB
