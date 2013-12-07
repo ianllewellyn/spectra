@@ -1,0 +1,22 @@
+{
+  "name": "spectra",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ianllewellyn/spectra",
+  "authors": [
+    "ianllewellyn <ian@designsideways.com>"
+  ],
+  "main": "lib/spectra.js",
+  "keywords": [
+    "js",
+    "javascript",
+    "rgb",
+    "light",
+    "frequency"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ]
+}
